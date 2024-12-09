@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 5000PX;
+    background-color: #182126;
+}
+
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+header {
+    background-image: linear-gradient(90deg, rgb(13 13 13 / 55%) 35%, rgba(3, 140, 127, 1) 100%), url(/css/i3.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: bottom;
+    
+}
+
+
+ .over {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background: rgb(13,13,13);
+    background: linear-gradient(90deg, rgb(13 13 13 / 55%) 35%, rgba(3, 140, 127, 1) 100%);
+} 
+
+header  .head-1 {
+    background-color: #0D0D0D;
+    color: #fff;
+    padding: 10px;
+}
+
+header  .head-info  .icon {
+   padding-right: 10px;
+}
+
+
+header  .head-1 .head-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-info .media li span{
+    padding-right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.head-info .media li span:hover {
+    color: rgb(24, 113, 247);
+}
+
+.head-info .media li .inst:hover {
+    color: rgb(250, 53, 135);
+}
+
+header  .head-1 .head-info ul  {
+   display: flex;
+   list-style: none;
+}
+
+header .head-1 .head-info li {
+    padding-right: 40px;
+}
+
+
+.header-menu .logo  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+
+.header-menu .logo img {
+    width: 60%;
+
+}
+
+.header-menu .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-menu {
+    background-color: #fff;
+    padding: 11px;
+    margin: 20px;
+    border-radius: 30px;
+    position: relative;
+
+}
+
+.header-menu .flex ul li {
+    display: inline-block;
+    padding: 0 20px;
+    text-align: center;
+
+}
+
+
+.header-menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1.1.1em;
+}
+
+
+
+.info {
+
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 50%;
+text-align: center;
+
+
+}
+
+ .contact-header h1 {
+    font-size: 5rem;
+
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 750px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        width: 970px;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        width: 1170px;
+    }
+    
+}
