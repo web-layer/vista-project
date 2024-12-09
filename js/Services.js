@@ -1,4 +1,4 @@
-JSON.parse(localStorage.getItem('prodacts'))
+/* JSON.parse(localStorage.getItem('prodacts'))
 
 let prodact = [
     {
@@ -51,4 +51,13 @@ let prodact = [
 ]
 
 
-export  default prodact
+export  default prodact */
+
+
+
+ document.querySelector(".btn").addEventListener("click", function() {
+    alert("Hello World!");
+  });
+
+
+console.log('dd')

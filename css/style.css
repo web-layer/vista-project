@@ -108,14 +108,21 @@ header .head-1 .head-info li {
     position: relative;
 
 }
-
+a,
 .header-menu .flex ul li {
     display: inline-block;
     padding: 0 20px;
     text-align: center;
+    transition: 0.5s;
 
 }
 
+
+
+.header-menu .flex ul li a:hover {
+color: #038c7f;
+
+}
 
 .header-menu li a {
     text-decoration: none;
@@ -124,7 +131,43 @@ header .head-1 .head-info li {
     font-size: 1.1.1em;
 }
 
+.contact-header p {
+    margin-bottom: 50px;
+}
 
+
+.contact-header .pererntbtn {
+    display: inline-block;
+    background-color: #038c7f;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+font-size: 16px;
+cursor: pointer;
+transition: 0.5s;
+}
+
+
+.contact-header .btn {
+    padding:  0 5px;
+}
+.contact-header .btn:hover {
+    background: transparent;
+}
+
+.contact-header .pererntbtn:hover {
+    background-color: #182126;
+    
+}
+
+.contact-header .ele {
+    display: block;
+    padding: 18px 44px;
+}
+
+.contact-header p {
+    font-size: 1.2em;
+}
 
 .info {
 
@@ -150,13 +193,16 @@ text-align: center;
 }
 
 .box-modle .container .box{
-    background: linear-gradient(217deg, rgba(3, 140, 126, 0.57), rgba(255, 255, 255, 0));
+    background: linear-gradient(217deg, #038c7e91, rgba(255, 255, 255, 0)); 
     display: flex;
     justify-content: center;
     padding: 15px;
-    height: 250px;
+    height: auto;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37)
  
 
 
@@ -176,10 +222,18 @@ text-align: center;
     width: 80px;
 }
 
+.boxinfo p {
+    color: #fff;
+}
+
 
 .boxinfo h2 {
     font-size: 1.2em;
     color: #fff;
+    margin: 11px 0;
+    width: 230px;
+    display: inline-block;
+    text-align: center;
  
 }
 
