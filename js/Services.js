@@ -54,10 +54,19 @@ let prodact = [
 export  default prodact */
 
 
+/* 
+let headre = document.getElementById('header')
 
- document.querySelector(".btn").addEventListener("click", function() {
-    alert("Hello World!");
-  });
+let image = ["header-image-1", "header-image-2"]
 
 
-console.log('dd')
+let currentindex = 0
+
+
+function chnqgephotoheader() {
+    headre.className = ""
+    headre.classList.add(image[currentindex])
+    currentindex = (currentindex + 1) % image.length
+}
+
+setInterval(chnqgephotoheader, 3000) */

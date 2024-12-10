@@ -11,6 +11,7 @@ body {
 
 
 
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -20,13 +21,35 @@ body {
 }
 
 header {
-    background-image: linear-gradient(90deg, rgb(13 13 13 / 55%) 35%, rgba(3, 140, 127, 1) 100%), url(/css/i3.jpg);
+
+    background-image: linear-gradient(90deg, rgb(13 13 13 / 55%) 35%, rgba(3, 140, 127, 1) 100%), url(/css/i2\ \(1\).jpg);
     background-size: cover;
     height: 100vh;
     width: 100%;
     background-position: bottom;
+    animation: slider 12s infinite;
     
 }
+
+/* 
+.header-image-1 {
+    background-image: url('/css/i3.jpg');
+  }
+  
+  .header-image-2 {
+    background-image: url('/css/i2\ \(1\).jpg');
+  }
+   */
+
+
+
+
+  
+
+.icon {
+
+    display: none;
+ }
 
 
  .over {
@@ -111,7 +134,7 @@ header .head-1 .head-info li {
 a,
 .header-menu .flex ul li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 16px;
     text-align: center;
     transition: 0.5s;
 
@@ -242,12 +265,45 @@ text-align: center;
 
 }
 
+
+
+@media (max-width: 992px ) {
+
+}
+
+
+
+@media (max-width: 992px ) {
+    .header-menu  {
+        border-radius: 0;
+        margin: 0;
+
+     }
+
+     .menu {
+       display: none;
+     }
+
+     .icon {
+        font-size: 1.5em;
+        display: block;
+        cursor: pointer;
+     }
+
+
+     .contact-header h1 {
+        font-size: 2.3em;
+    }
+}
+
+
 @media (min-width: 768px) {
 
     .container {
         width: 750px;
     }
-    
+
+
 }
 
 @media (min-width: 992px) {
@@ -265,3 +321,5 @@ text-align: center;
     }
     
 }
+
+
