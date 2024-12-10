@@ -54,8 +54,8 @@ let prodact = [
 export  default prodact */
 
 
-/* 
-let headre = document.getElementById('header')
+
+/* let headre = document.getElementById('header')
 
 let image = ["header-image-1", "header-image-2"]
 
