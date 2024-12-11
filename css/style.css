@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", Sans-serif;
 }
 
 body {
@@ -26,8 +27,8 @@ header {
     background-size: cover;
     height: 100vh;
     width: 100%;
-    background-position: bottom;
-    animation: slider 12s infinite;
+   background-position: bottom;
+    overflow: hidden;
     
 }
 
@@ -103,7 +104,7 @@ header .head-1 .head-info li {
 
 .header-menu .logo  {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
 
@@ -134,7 +135,7 @@ header .head-1 .head-info li {
 a,
 .header-menu .flex ul li {
     display: inline-block;
-    padding: 0 16px;
+    padding: 0 12px;
     text-align: center;
     transition: 0.5s;
 
@@ -273,6 +274,7 @@ text-align: center;
 
 
 
+
 @media (max-width: 992px ) {
     .header-menu  {
         border-radius: 0;
@@ -281,21 +283,98 @@ text-align: center;
      }
 
      .menu {
-       display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      
      }
+
+     .menu.active  {
+       visibility: visible;
+       opacity: 1;
+    
+     }
+
+
+     
+     .header-menu .container .menu li{
+        text-align: left;
+        padding: 16px 0;
+     }
+
+
+     .header-menu .container .menu li a{
+        color: #fff;
+     }
+
+     .header-menu .container .menu  {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #182126;
+        width: 100%;
+    }
 
      .icon {
         font-size: 1.5em;
         display: block;
         cursor: pointer;
      }
-
-
+ 
      .contact-header h1 {
         font-size: 2.3em;
+        margin: 20px 0;
     }
+
+
+    header .head-1 .head-info li {
+      display: none;
+    }
+
+    header .head-1  {
+        display: none;
+    }
+
+
 }
 
+.iconsocial {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
+.iconsocial img{
+    width: 30px;
+
+}
+
+.social img{
+    width:40px;
+
+}
+
+.iconsocial .send {
+    display: flex;
+    cursor: pointer;
+    justify-content: end;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+
+.iconsocial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
 
 @media (min-width: 768px) {
 

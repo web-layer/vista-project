@@ -55,18 +55,46 @@ export  default prodact */
 
 
 
-/* let headre = document.getElementById('header')
+document.addEventListener("DOMContentLoaded", function () {
 
-let image = ["header-image-1", "header-image-2"]
+    let iconmenu = document.querySelector(".iconmenu")
+
+    let listmenu = document.querySelector(".menu")
+
+    iconmenu.addEventListener("click", function (e) {
+
+    listmenu.classList.toggle('active')
+
+    })
 
 
-let currentindex = 0
+
+    
+        
+    let send = document.querySelector(".send")
+
+    send.addEventListener("click", function () {
+
+        let input = document.querySelector("textarea")
+
+        let getinputvalue = input.value.trim()
+
+        let phone = '+212 661-522768'
+
+        let massge = `https://api.whatsapp.com/send?phone=${phone}&text=${getinputvalue}`;
+
+        window.open(massge, "_blank")
+
+    })
+
+    
+        
+      
+})
 
 
-function chnqgephotoheader() {
-    headre.className = ""
-    headre.classList.add(image[currentindex])
-    currentindex = (currentindex + 1) % image.length
-}
 
-setInterval(chnqgephotoheader, 3000) */
+
+
+
+/* href="https://api.whatsapp.com/send?phone=212 661-522768&text=Send سي عبد رحيم " target="_blank" */
