@@ -30,6 +30,8 @@ header {
   overflow: hidden;
 }
 
+
+
 /* 
 .header-image-1 {
     background-image: url('/css/i3.jpg');
@@ -184,30 +186,51 @@ a,
 
 .box-modle .box::before {
   content: "";
-  width: 100%;
+  width: 0;
   z-index: -1;
   height: 0;
   position: absolute;
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #038c7f;
   transition: all .6s ease;
-/*   border-bottom-right-radius: 100%;
-  border-bottom-left-radius: 100%; */
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;  
+
+ 
+
 }
 
 .box-modle .box:hover::before  {
   height: 100%;
+  width: 100%;
+  background-color: #182126;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0 ;
+ 
+
+
+ 
  
 }
 
-.box-modle .box:hover .boxinfo  p{
+.box-modle .box:hover  .boxinfo h2  {
   color: #fff;
    
 }
 
 
+/* end inner section */
+
+.elevideo video {
+  width: 500px;
+    height: 400px;
+}
+
+.flex-2 {
+  display: flex;
+  align-items: center;
+}
 
 .info {
   display: flex;
