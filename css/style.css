@@ -173,6 +173,42 @@ a,
   font-size: 1.2em;
 }
 
+.box-modle .box {
+  z-index: 1;
+  position: relative;
+  color: #787878;
+  transition: color 0.5s;
+  display: inline-block;
+  overflow: hidden; /* لضمان عدم خروج العنصر الوهمي */
+}
+
+.box-modle .box::before {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  height: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #038c7f;
+  transition: all .6s ease;
+/*   border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%; */
+}
+
+.box-modle .box:hover::before  {
+  height: 100%;
+ 
+}
+
+.box-modle .box:hover .boxinfo  p{
+  color: #fff;
+   
+}
+
+
+
 .info {
   display: flex;
   align-items: center;
@@ -234,8 +270,7 @@ a,
   font-size: 5rem;
 }
 
-@media (max-width: 992px) {
-}
+
 
 /* start section inner */
 
@@ -270,7 +305,7 @@ a,
   border-left-color: #038c7f;
   border-left-width: 3px;
   border-left-style: solid;
-  font-size: x-large;
+  font-size: 19px;
   font-style: italic;
 }
 
@@ -291,6 +326,17 @@ a,
   font-weight: 500;
   margin-bottom: 16px;
 }
+
+@media (max-width: 992px) {
+  .inner .flex_section img {
+   width: 100%;
+   height: auto;
+  }
+  
+}
+
+
+
 
 @media (max-width: 992px) {
   .inner .flex_section {
