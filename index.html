@@ -224,7 +224,9 @@
         <div class="container">
             <div class="flex_section flex-2">
                 <div class="elevideo">
-                  <video src="" poster="/css/High-resolution stock photo of a video camera recording a blurred live performance. Bioluminescent glowing colors, professional quality, natural light effects and vibrant glow. AI-generated.jpg" controls></video>
+                    <video src=""
+                        poster="/css/High-resolution stock photo of a video camera recording a blurred live performance. Bioluminescent glowing colors, professional quality, natural light effects and vibrant glow. AI-generated.jpg"
+                        controls></video>
                 </div>
 
                 <div class="info_inner">
@@ -239,7 +241,11 @@
 
                             VISTA-PROD
                             Explorez le monde de Vista, où l'audiovisuel devient une expérience immersive
-                            À travers les années, Vista a marqué de son empreinte divers projets, de la publicité à la narration visuelle, témoignant ainsi de notre engagement envers l’excellence. Découvrez le monde de Vista où l’audiovisuel devient une expérience immersive, capturant chaque moment avec une précision artistique. Faites de nous votre partenaire pour concrétiser vos visions audiovisuelles. Vista – Votre Histoire, notre Vision.
+                            À travers les années, Vista a marqué de son empreinte divers projets, de la publicité à la
+                            narration visuelle, témoignant ainsi de notre engagement envers l’excellence. Découvrez le
+                            monde de Vista où l’audiovisuel devient une expérience immersive, capturant chaque moment
+                            avec une précision artistique. Faites de nous votre partenaire pour concrétiser vos visions
+                            audiovisuelles. Vista – Votre Histoire, notre Vision.
                         </p>
                     </div>
                 </div>
@@ -255,9 +261,11 @@
         <label for="name">Name:</label>
         <input type="text" id="name" placeholder="Enter your name" required>
         <br><br>
+        <input type="number" id="name" placeholder="phone" required>
+        <br><br>
         <button type="submit">Submit</button>
-      </form>
-    
+    </form>
+
 
 
     <div>
@@ -279,24 +287,37 @@
 
     <script type="module" src="/js/app.js"></script>
     <script>
-        document.getElementById('googleForm').addEventListener('submit', function(event) {
-          event.preventDefault();
-    
-          const email = encodeURIComponent(document.getElementById('email').value);
-          const name = encodeURIComponent(document.getElementById('name').value);
-    
-          const baseUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeV_hmf8wtdg-YyMo6gN-LUMKOpCyUxvNNtL29v45c3LmmedQ/formResponse';
-          const params = `?entry.1942106461=${email}&entry.1841655811=${name}`;
-    
-          const form = document.createElement('form');
-      form.action = finalUrl;
-      form.method = 'post';
-      form.target = 'hiddenIframe';  // This submits the form to the hidden iframe
+        document.getElementById('googleForm').addEventListener('submit', function (event) {
+            event.preventDefault();
 
-      // Submit the form using the iframe
-      form.submit();
+            const email = encodeURIComponent(document.getElementById('email').value);
+            const name = encodeURIComponent(document.getElementById('name').value);
+    
+
+
+    
+    
+
+            fetch('https://docs.google.com/forms/d/e/1FAIpQLSc0Rwt7bofaJTgNl6GP4QtVMbkUUpN8Xdn8s-t4QVCrisSLEw/formResponse', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `entry.1381557940=${email}&entry.1355707=${name}`
+            })
+                .then(() => {
+                    alert('Form submitted successfully!');
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert('Failed to submit the form.');
+                });
+
+
+
         });
-      </script>
+    </script>
 </body>
 
 </html>
