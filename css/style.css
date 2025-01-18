@@ -22,7 +22,7 @@ header {
       rgb(13 13 13 / 55%) 35%,
       rgba(3, 140, 127, 1) 100%
     ),
-    url("/css/i2\ \(1\).jpg");
+    url("/css/i3.jpg");
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -473,4 +473,48 @@ textarea {
   .container {
     width: 1170px;
   }
+}
+
+
+
+.Services {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.Services  .info-Services span {
+  font-size: 1.3em;
+  line-height: 4.2;
+  color: #038c7f
+}
+
+.Services .description {
+  margin-top: 20px;
+  line-height: 1.5em;
+  color: #787878;
+  margin-bottom: 30px;
+  
+}
+
+
+.box-Services .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+
+}
+
+.Services .box {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  
+}
+
+.Services .box h2 {
+  padding-bottom: 20px;
+}
+
+.Services .box p {
+  color: #787878;
+  text-align: center;
 }

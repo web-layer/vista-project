@@ -55,7 +55,7 @@ export  default prodact */
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
+ document.addEventListener("DOMContentLoaded", function () {
 
     let iconmenu = document.querySelector(".iconmenu")
 
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     
-        
+/*         
     let send = document.querySelector(".send")
 
     send.addEventListener("click", function () {
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         window.open(massge, "_blank")
 
-    })
+    }) */
 
     
         
@@ -94,36 +94,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.getElementById('googleForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    const email = encodeURIComponent(document.getElementById('email').value);
-    const name = encodeURIComponent(document.getElementById('name').value);
 
 
 
 
 
-
-    fetch('https://docs.google.com/forms/d/e/1FAIpQLSc0Rwt7bofaJTgNl6GP4QtVMbkUUpN8Xdn8s-t4QVCrisSLEw/formResponse', {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: `entry.1381557940=${email}&entry.1355707=${name}`
-    })
-        .then(() => {
-            alert('Form submitted successfully!');
+    let form = document.getElementById('googleForm').addEventListener('submit', function (e) {
+        const email = encodeURIComponent(document.getElementById('email').value);
+        const name = encodeURIComponent(document.getElementById('name').value);
+    
+    
+    
+        fetch('https://docs.google.com/forms/d/e/1lj5yS9yjF3bYSeBr0lCgZ9Dq4qzaJ1Eh-t4QVCrisSLEw/formResponse', {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: `entry.1995183664=${email}&entry.1428134946=${name}`
         })
-        .catch((error) => {
-            console.error('Error:', error);
-            alert('Failed to submit the form.');
-        });
+            .then(() => {
+                console.log('Form submitted successfully!');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                console('Failed to submit the form.');
+            });
+    
+    })
+
+    
 
 
 
-});
 
 
 
