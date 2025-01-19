@@ -22,7 +22,7 @@ header {
       rgb(13 13 13 / 55%) 35%,
       rgba(3, 140, 127, 1) 100%
     ),
-    url("/css/i3.jpg");
+    url("/css/pexels-ron-lach-8102677.jpg");
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -117,9 +117,10 @@ header .head-1 .head-info li {
 .header-menu {
   background-color: #fff;
   padding: 11px;
-  margin: 20px;
-  border-radius: 30px;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 a,
 .header-menu .flex ul li {
@@ -236,7 +237,7 @@ a,
   display: flex;
   align-items: center;
   color: #fff;
-  height: 50%;
+  height: 100%;
   text-align: center;
 }
 
