@@ -1,0 +1,35 @@
+.Services {
+    margin-top: 0 ;
+  }
+  
+
+  .sectionblog  {
+  margin-top: 120px;
+  
+    
+  }
+
+  .sectionblog  {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  
+
+  .header-menu {
+    position: relative;
+  }
+
+  .sectionblog .image img{
+    width: 50%;
+
+  }
+
+
+  
+  .sectionblog  p{
+
+  width: 100%;
+
+  }
+
