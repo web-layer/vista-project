@@ -105,13 +105,13 @@ export  default prodact */
     
     
     
-        fetch('https://docs.google.com/forms/d/e/1lj5yS9yjF3bYSeBr0lCgZ9Dq4qzaJ1Eh-t4QVCrisSLEw/formResponse', {
+        fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLScvFpIyMloB4JAEY-HCSdnV0I5K3wSkY11vLOafJfQAh7flmQ/formResponse', {
             method: 'POST',
             mode: 'no-cors',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
-            body: `entry.1995183664=${email}&entry.1428134946=${name}`
+            body: `entry.1243685087=${email}&entry.1353529448=${name}`
         })
             .then(() => {
                 console.log('Form submitted successfully!');
