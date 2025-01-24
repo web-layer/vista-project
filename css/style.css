@@ -556,53 +556,106 @@ color: #0d0d0d;
 .Approche {
   margin-top: 120px;
 }
-.Approche .flex_approche img{
-  width: 100%;
 
+
+.Approche .flex_approche .imgApproche img{
+width: 50%;
+
+} 
+.imgApproche  {
+  display: contents;
 }
 
-.Approche .flex_approche{
+
+
+.flex_approche {
   display: flex;
-  justify-content: center;
+  align-content: center;
   align-items: center;
   gap: 40px;
+}
 
+
+.modle-Approche .media {
+  gap: 20px;
 
 }
 
 
-
-
-.Approche-info > span {
-  color: #038c7f;
-  font-size: 1.3em;
-  display: block;
-  padding-bottom: 20px;
-
-}
-
-
-.modle-Approche .modle  .iconApproche i{
-  font-size: 40px;
-  padding-right: 10px;
-}
-
-.modle-Approche .modle {
-  padding: 20px;
+.Approche-info .modle-Approche .modle {
   display: flex;
-align-content: center;
+  align-content: center;
+  padding: 20px;
+
+}
+
+.Approche-info .modle-Approche .modle .iconApproche {
+   font-size: 30px;
+   margin-right: 10px;
+   
+}
+
+.Approche-info  span {
+  line-height: 3.5;
+  color: #038c7f;
+  font-style: italic;
+}
+
+.Approche-info title {
+  font-size: 2.1em;
+}
+
+.modle .content h2 {
+  color: #182126;
+  margin:  0 0 10px;
+}
+
+.modle-info p {
+  color: #787878;
+}
+
+
+
+
+
+.RÉFÉRENCES .box_RÉFÉRENCES{
+  display: flex;
+  justify-content: center;
   
 }
 
-.modle-Approche .modle h2 {
-  color: #182126;
-  padding-bottom:20px ;
+
+.boxinma {
+  
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 90%;
+
+
 }
 
-.modle-Approche .modle p {
-   width: 100%;
-   line-height: 1.4;
-   color: #787878;
+.RÉFÉRENCES .box_RÉFÉRENCES {
+  animation: slide 20s linear infinite;
+
+
+}
+
+
+
+.RÉFÉRENCES .box_RÉFÉRENCES .box{
+  padding: 0 20px;
+
+  
+}
+
+@keyframes slide {
+  0% {
+    transform:  translateX(0);
+  }
+
+  100% {
+    transform:  translateX(calc(-250px  * 9));
+  }
 }
 
 /*end section Approche*/

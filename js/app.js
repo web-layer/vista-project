@@ -1,57 +1,3 @@
-/* JSON.parse(localStorage.getItem('prodacts'))
-
-let prodact = [
-    {
-        id:1,
-        title: "pmv chamara",
-        discription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-        price: 590,
-        img: 'pmv-chamara.jpg',
-    },
-
-    {
-        id:2,
-        title: "smart watch",
-        discription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-        price: 50,
-        img: 'chuttersnap.jpg',
-    },
-
-    {
-        id:3,
-        title: "pmv chamara",
-        discription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-        price: 80,
-        img: 'Shoes.jpg',
-    },
-
-    {
-        id:4,
-        title: "Bluetooth Headphones",
-        discription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-        price: 100,
-        img: 'Headphones.jpg',
-    },
-
-    {
-        id:5,
-        title: "wristwatch",
-        discription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-        price: 120,
-        img: 'wristwatch.jpg',
-    },
-
-    {
-        id:6,
-        title: "Fashion Watch",
-        discription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-        price: 170,
-        img: 'Fashion-Watch.jpg',
-    },
-]
-
-
-export  default prodact */
 
 
 
@@ -95,10 +41,7 @@ export  default prodact */
 
 
 
-
-
-
-
+/* 
     let form = document.getElementById('googleForm').addEventListener('submit', function (e) {
         const email = encodeURIComponent(document.getElementById('email').value);
         const name = encodeURIComponent(document.getElementById('name').value);
@@ -122,14 +65,44 @@ export  default prodact */
             });
     
     })
-
+ */
     
 
 
 
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxmD7EVD67VXAxMpAUn9zrLL7SbWzaDtgyTzoqInooLzRW7pvPxj5ZxdQderi9PH4-40Q/exec'
+    const form = document.forms['Contact-us']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, 
+        { 
+            method: 'POST', 
+            body: new FormData(form)
+
+        })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
 
 
 
 
+
+
+
+// Disable right-click
+/* 
+if (document.addEventListener) {
+    document.addEventListener('contextmenu', function(e) {
+      alert("This function has been disabled to prevent you from stealing my code!");
+      e.preventDefault();
+    }, false);
+  } else {
+    document.attachEvent('oncontextmenu', function() {
+      alert("This function has been disabled to prevent you from stealing my code!");
+      window.event.returnValue = false;
+    });
+  } */
 
 /* href="https://api.whatsapp.com/send?phone=212 661-522768&text=Send سي عبد رحيم " target="_blank" */
