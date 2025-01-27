@@ -695,7 +695,6 @@ width: 50%;
 
 .Réalisation .container .perentbox{
  display: grid;
-/*  grid-template-columns: repeat(4, 1fr); */
 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 gap: 10px;
 text-align: center;
