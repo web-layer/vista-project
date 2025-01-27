@@ -41,7 +41,7 @@ header  {
       rgb(13 13 13 / 55%) 35%,
       rgba(3, 140, 127, 1) 100%
     ),
-    url("/css/header.webp");  
+    url("css/header.webp");  
   background-size: cover;
   height: 100vh;
   width: 100%;
