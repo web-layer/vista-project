@@ -1,6 +1,14 @@
 
     
 
+
+
+
+
+
+
+
+
  document.addEventListener("DOMContentLoaded", function () {
 
     let iconmenu = document.querySelector(".iconmenu")
@@ -12,6 +20,43 @@
     listmenu.classList.toggle('active')
 
     })
+
+    let ele = document.querySelector('.loaderscreen')
+
+
+
+
+
+    window.onload = function () {
+        ele.classList.add('add')
+
+        setInterval(function () {
+            ele.classList.add('fade-out')
+        }, 3000)
+
+    }
+
+
+/* 
+    let count = 10
+    let copye = document.querySelectorAll(".box_RÉFÉRENCES")
+
+
+
+
+    copye.forEach((cloneele) => {
+        
+
+if(cloneele >= count){return false}
+
+        let clone = cloneele.cloneNode(true)
+    
+       
+        cloneele.parentNode.appendChild(clone)
+    })
+    
+     */
+
 
 
 

@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <head>
+
     <title>Vista Prod</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96" />
@@ -17,6 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Development version -->
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,13 +29,17 @@
 
 <body>
 
+    <div class="loaderscreen">
+        <span class="loader"></span>
+    </div>
+   
     <header>
 
         <div class="header-menu">
 
             <div class="container flex">
                 <div class="logo">
-                   <a href="index.html"><img  src="img/VISTA-PROD.png" loading="lazy"></a> 
+                   <a href="index.html"><img  src="https://ik.imagekit.io/7sukdkmvj/VISTA-PROD.png?updatedAt=1738142743798" loading="lazy"></a> 
                 </div>
 
                 <ul class="menu">
@@ -72,11 +79,15 @@
                             </span>
                             <span><i class="fa-solid fa-circle-chevron-right"></i></span>
                         </span>
+                    
                     </div>
+                  
                 </div>
 
             </div>
+            <span class="mouse"></span>
         </div>
+
 
 
     </header>
@@ -193,8 +204,7 @@
         <div class="container">
             <div class="flex_section flex-2">
                 <div class="elevideo">
-                    <video src=""></video>
-                </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qXIshhj4YIE?si=vVsd70q2lvAm6Ers" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
 
                 <div class="info_inner">
                     <span>VISTA-PROD</span>
@@ -249,8 +259,8 @@
             <div class="container">
 
                 <div class="box">
-                    <a href="pages/Film_institutionnel.html" class="link">
-                        <img class="img" src="img/OFFERS/Film institutionnel.webp" loading="lazy"/>
+                    <a href="Film_institutionnel.html" class="link">
+                        <img class="img" src="img/OFFERS/film.webp" loading="lazy"/>
                         <div class="modle-info">
                             <h2>Film institutionnel</h2>
                             <p>
@@ -264,8 +274,8 @@
 
 
                 <div class="box">
-                    <a href="pages/LiveStreaming.html" class="link">
-                        <img class="img" src="img/OFFERS/Film institutionnel.jpg" loading="lazy"/>
+                    <a href="LiveStreaming.html" class="link">
+                        <img class="img" src="img/OFFERS/Live Streaming.webp" loading="lazy"/>
                         <div class="modle-info">
                             <h2>Live Streaming</h2>
                             <p>
@@ -280,7 +290,7 @@
 
                 <div class="box">
                     <a href="Documentaire.html" class="link">
-                        <img class="img" src="img/OFFERS/Documentaire.jpg" loading="lazy"/>
+                        <img class="img" src="img/OFFERS/photograph.webp" loading="lazy"/>
                         <div class="modle-info">
                             <h2>Documentaire</h2>
                             <p>
@@ -310,7 +320,7 @@
                 </div>
 
                 <div class="box">
-                    <a href="pages/vidéoévénementielle.html" class="link">
+                    <a href="vidéoévénementielle.html" class="link">
                         <img class="img" src="img/OFFERS/Captation vidéo événementielle.jpg" width="50%"  loading="lazy"/>
                         <div class="modle-info">
                             <h2>Captation vidéo événementielle</h2>
@@ -324,7 +334,7 @@
                 </div>
                 <div class="box">
                     <a href="Reportage.html" class="link">
-                        <img class="img" src="img/OFFERS/Film institutionnel.webp"  loading="lazy"/>
+                        <img class="img" src="img/OFFERS/partage.webp" loading="lazy"/>
                         <div class="modle-info">
                             <h2>Reportage Vidéo Et Photo</h2>
                             <p>
@@ -338,7 +348,7 @@
 
                 <div class="box">
                     <a href="Photographie.html" class="link">
-                        <img class="img" src="img/OFFERS/Film institutionnel.webp" loading="lazy" />
+                        <img class="img" src="img/OFFERS/photograph.webp"  loading="lazy" />
                         <div class="modle-info">
                             <h2>Photographie</h2>
                             <p>
@@ -354,7 +364,7 @@
 
                 <div class="box">
                     <a href="CaptationAérienne.html" class="link">
-                        <img class="img" src="img/OFFERS/Film institutionnel.webp" loading="lazy" />
+                        <img class="img" src="img/OFFERS/drone.webp"  loading="lazy" />
                         <div class="modle-info">
                             <h2>Captation Aérienne</h2>
 
@@ -369,7 +379,7 @@
 
                 <div class="box">
                     <a href="Montage.html" class="link">
-                        <img class="img" src="img/OFFERS/Film institutionnel.webp" loading="lazy" />
+                        <img class="img" src="img/OFFERS/Montage.webp"  loading="lazy" />
                         <div class="modle-info">
                             <h2>Montage Vidéo et Post Production</h2>
                             <p>
@@ -401,7 +411,7 @@
                 <div class="modle-Approche">
                     <div class="modle">
                         <div class="iconApproche">
-                            <i class="fa-regular fa-message"></i>
+                            <i class="fa-regular fa-message" style="color:#038c7f;"></i>
                         </div>
                         <div class="content">
                             <h2>Prise De Contact</h2>
@@ -414,7 +424,7 @@
                     </div>
                     <div class="modle">
                         <div class="iconApproche">
-                            <i class="fa-regular fa-message"></i>
+                            <i data-lucide="file-check-2" style="color:#038c7f;"></i>
                         </div>
                         <div class="content">
                             <h2>Élaboration De Devis</h2>
@@ -426,8 +436,10 @@
                         </div>
                     </div>
                     <div class="modle">
+                     
                         <div class="iconApproche">
-                            <i class="fa-regular fa-message"></i>
+                            <i data-lucide="truck" style="color:#038c7f;"></i>
+                            
                         </div>
                         <div class="content">
                             <h2>Livraison</h2>
@@ -545,6 +557,11 @@
 
 
     <script type="module" src="js/app.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+
 
 </body>
 
