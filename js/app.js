@@ -1,5 +1,4 @@
 
-    
 
 
 
@@ -9,7 +8,8 @@
 
 
 
- document.addEventListener("DOMContentLoaded", function () {
+
+document.addEventListener("DOMContentLoaded", function () {
 
     let iconmenu = document.querySelector(".iconmenu")
 
@@ -17,14 +17,21 @@
 
     iconmenu.addEventListener("click", function (e) {
 
-    listmenu.classList.toggle('active')
+        listmenu.classList.toggle('active')
 
     })
 
+
+
+
+    let btnscroll = document.getElementById("btnscroll")
+    btnscroll.onclick = function () {
+        document.getElementById("Offrons").scrollIntoView({ behavior: "smooth" });
+    }
+
+
+
     let ele = document.querySelector('.loaderscreen')
-
-
-
 
 
     window.onload = function () {
@@ -37,50 +44,51 @@
     }
 
 
-/* 
-    let count = 10
+
+
+
+
+
     let copye = document.querySelectorAll(".box_RÉFÉRENCES")
 
 
 
 
     copye.forEach((cloneele) => {
-        
 
-if(cloneele >= count){return false}
 
         let clone = cloneele.cloneNode(true)
-    
-       
+
+
         cloneele.parentNode.appendChild(clone)
     })
+
+
+
+
+
+
+
+    /*         
+        let send = document.querySelector(".send")
     
-     */
-
-
-
-
+        send.addEventListener("click", function () {
     
-/*         
-    let send = document.querySelector(".send")
-
-    send.addEventListener("click", function () {
-
-        let input = document.querySelector("textarea")
-
-        let getinputvalue = input.value.trim()
-
-        let phone = '+212 661-522768'
-
-        let massge = `https://api.whatsapp.com/send?phone=${phone}&text=${getinputvalue}`;
-
-        window.open(massge, "_blank")
-
-    }) */
-
+            let input = document.querySelector("textarea")
     
-        
-      
+            let getinputvalue = input.value.trim()
+    
+            let phone = '+212 661-522768'
+    
+            let massge = `https://api.whatsapp.com/send?phone=${phone}&text=${getinputvalue}`;
+    
+            window.open(massge, "_blank")
+    
+        }) */
+
+
+
+
 })
 
 
@@ -111,24 +119,24 @@ if(cloneele >= count){return false}
     
     })
  */
-    
 
 
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxmD7EVD67VXAxMpAUn9zrLL7SbWzaDtgyTzoqInooLzRW7pvPxj5ZxdQderi9PH4-40Q/exec'
-    const form = document.forms['Contact-us']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, 
-        { 
-            method: 'POST', 
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxmD7EVD67VXAxMpAUn9zrLL7SbWzaDtgyTzoqInooLzRW7pvPxj5ZxdQderi9PH4-40Q/exec'
+const form = document.forms['Contact-us']
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL,
+        {
+            method: 'POST',
             body: new FormData(form)
 
         })
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
-    })
+})
 
 
 
@@ -152,4 +160,3 @@ if (document.addEventListener) {
 
 /* href="https://api.whatsapp.com/send?phone=212 661-522768&text=Send سي عبد رحيم " target="_blank" */
 
-    
