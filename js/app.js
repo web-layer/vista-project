@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    let copye = document.querySelectorAll(".box_RÉFÉRENCES")
+/*     let copye = document.querySelectorAll(".box_RÉFÉRENCES")
 
 
 
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cloneele.parentNode.appendChild(clone)
     })
 
-
+ */
 
 
 
