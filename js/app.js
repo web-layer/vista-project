@@ -31,39 +31,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    let ele = document.querySelector('.loaderscreen')
-
-
-    window.onload = function () {
-        ele.classList.add('add')
-
-        setInterval(function () {
-            ele.classList.add('fade-out')
-        }, 3000)
-
-    }
 
 
 
 
 
-
-
-/*     let copye = document.querySelectorAll(".box_RÉFÉRENCES")
-
-
-
-
-    copye.forEach((cloneele) => {
-
-
-        let clone = cloneele.cloneNode(true)
-
-
-        cloneele.parentNode.appendChild(clone)
-    })
-
- */
+    /*     let copye = document.querySelectorAll(".box_RÉFÉRENCES")
+    
+    
+    
+    
+        copye.forEach((cloneele) => {
+    
+    
+            let clone = cloneele.cloneNode(true)
+    
+    
+            cloneele.parentNode.appendChild(clone)
+        })
+    
+     */
 
 
 

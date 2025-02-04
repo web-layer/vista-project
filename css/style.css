@@ -11,6 +11,17 @@
 
 }
 
+.Services {
+    min-height: 500px; 
+  
+}
+
+
+.Services .box img {
+
+    height: auto;
+    display: block;
+}
 
 .loader {
   position: relative;
