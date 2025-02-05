@@ -8,7 +8,6 @@
 
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
 
     let iconmenu = document.querySelector(".iconmenu")
@@ -34,23 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-    /*     let copye = document.querySelectorAll(".box_RÉFÉRENCES")
-    
-    
-    
-    
-        copye.forEach((cloneele) => {
-    
-    
-            let clone = cloneele.cloneNode(true)
-    
-    
-            cloneele.parentNode.appendChild(clone)
-        })
-    
-     */
 
 
 
@@ -110,10 +92,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxmD7EVD67VXAxMpAUn9zrLL7SbWzaDtgyTzoqInooLzRW7pvPxj5ZxdQderi9PH4-40Q/exec'
 const form = document.forms['Contact-us']
 
 form.addEventListener('submit', e => {
+
     e.preventDefault()
     fetch(scriptURL,
         {
@@ -124,8 +110,6 @@ form.addEventListener('submit', e => {
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
 })
-
-
 
 
 
