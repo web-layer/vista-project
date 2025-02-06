@@ -895,9 +895,18 @@ text-align: center;
 
 p{
   width: 100%;
-  line-height: 1.4;
+  line-height: 1.6;
+  padding: 10px;
 }
 
+strong {
+  font-weight: bold;
+  color: #038c7f;
+}
+
+.blog {
+  margin-bottom: 120px;
+}
 
 @media (max-width: 992px) {
 
