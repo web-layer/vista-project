@@ -58,8 +58,10 @@ window.addEventListener("scroll", function () {
 clicktopscroll.addEventListener('click', function () {
   window.scroll({
     top: 0,
-    behavior: "smooth"
+    behavior: "smooth",
+
   })
+ 
 })
 
 
