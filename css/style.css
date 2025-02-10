@@ -12,15 +12,15 @@
 }
 
 .Services {
-    min-height: 500px; 
-  
+  min-height: 500px;
+
 }
 
 
 .Services .box img {
 
-    height: auto;
-    display: block;
+  height: auto;
+  display: block;
 }
 
 .loader {
@@ -29,31 +29,52 @@
   height: 50px;
   background-repeat: no-repeat;
   background-image: linear-gradient(#038c7f 50px, transparent 0),
-   linear-gradient(#038c7f 50px, transparent 0),
-   linear-gradient(#038c7f 50px, transparent 0),
-   linear-gradient(#038c7f 50px, transparent 0),
-   linear-gradient(#038c7f 50px, transparent 0),
-   linear-gradient(#038c7f 50px, transparent 0);
+    linear-gradient(#038c7f 50px, transparent 0),
+    linear-gradient(#038c7f 50px, transparent 0),
+    linear-gradient(#038c7f 50px, transparent 0),
+    linear-gradient(#038c7f 50px, transparent 0),
+    linear-gradient(#038c7f 50px, transparent 0);
   background-position: 0px center, 15px center, 30px center, 45px center, 60px center, 75px center, 90px center;
   animation: loaderpage 0.65s linear infinite alternate;
 }
 
 
 @keyframes loaderpage {
-0% { background-size: 10px 3px;}
-16% { background-size: 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px, 10px 3px}
-33% { background-size: 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px}
-50% { background-size: 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px}
-66% { background-size: 10px 3px, 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px}
-83% { background-size: 10px 3px, 10px 3px,  10px 10px, 10px 30px, 10px 50px, 10px 3px}
-100% { background-size: 10px 3px, 10px 3px, 10px 3px,  10px 10px, 10px 30px, 10px 50px}
+  0% {
+    background-size: 10px 3px;
+  }
+
+  16% {
+    background-size: 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px, 10px 3px
+  }
+
+  33% {
+    background-size: 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px
+  }
+
+  50% {
+    background-size: 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px
+  }
+
+  66% {
+    background-size: 10px 3px, 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px
+  }
+
+  83% {
+    background-size: 10px 3px, 10px 3px, 10px 10px, 10px 30px, 10px 50px, 10px 3px
+  }
+
+  100% {
+    background-size: 10px 3px, 10px 3px, 10px 3px, 10px 10px, 10px 30px, 10px 50px
+  }
 }
-  
+
 
 
 body {
 
- 
+  background-color: #e9ecef;
+
 }
 
 .loaderscreen.add {
@@ -76,7 +97,7 @@ body {
 
 .loaderscreen.fade-out {
   opacity: 0;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .container {
@@ -86,7 +107,7 @@ body {
   overflow-x: hidden;
   max-width: 100%;
   margin-right: auto;
-  
+
 
 }
 
@@ -112,7 +133,7 @@ body {
   position: absolute;
   left: 50%;
   top: 0;
-  transform: translate(-50% , 50%);
+  transform: translate(-50%, 50%);
   width: 10px;
   height: 10px;
   background: #FFF;
@@ -125,6 +146,7 @@ body {
     top: 0%;
     opacity: 1;
   }
+
   100% {
     top: 60%;
     opacity: 0;
@@ -135,18 +157,16 @@ body {
 
 
 
-header  {
-   background-image: linear-gradient(
-      90deg,
+header {
+  background-image: linear-gradient(90deg,
       rgb(13 13 13 / 55%) 35%,
-      rgba(3, 140, 127, 1) 100%
-    ),
-    url("../css/header.webp");  
+      rgba(3, 140, 127, 1) 100%),
+    url("../css/header.webp");
   background-size: cover;
   height: 100vh;
   width: 100%;
   background-position: center;
- 
+
   background-attachment: fixed;
   overflow: hidden;
 
@@ -174,11 +194,9 @@ header  {
   height: 100vh;
   padding: 20px;
   background: rgb(13, 13, 13);
-  background: linear-gradient(
-    90deg,
-    rgb(13 13 13 / 55%) 35%,
-    rgba(3, 140, 127, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgb(13 13 13 / 55%) 35%,
+      rgba(3, 140, 127, 1) 100%);
 }
 
 header .head-1 {
@@ -244,6 +262,7 @@ header .head-1 .head-info li {
   z-index: 999;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 a,
 .header-menu .flex ul li {
   display: inline-block;
@@ -266,7 +285,7 @@ a,
 
 .contact-header p {
   margin-bottom: 50px;
-  overflow-x:  hidden;
+  overflow-x: hidden;
 }
 
 .contact-header .pererntbtn {
@@ -284,6 +303,7 @@ a,
   padding: 0 5px;
 
 }
+
 .contact-header .btn:hover {
   background: transparent;
 }
@@ -300,10 +320,10 @@ a,
 
 
 
-.contact-header .ele a{
- text-decoration: none;
- color: #fff;
- font-size: 1.2em;
+.contact-header .ele a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
 }
 
 
@@ -317,7 +337,8 @@ a,
   color: #787878;
   transition: color 0.5s;
   display: inline-block;
-  overflow: hidden; 
+  overflow: hidden;
+
 }
 
 .box-modle .box::before {
@@ -331,72 +352,72 @@ a,
   right: 0;
   transition: all .6s ease;
   border-top-right-radius: 50%;
-  border-top-left-radius: 50%;  
+  border-top-left-radius: 50%;
 
- 
+
 
 }
 
-.box-modle .box:hover::before  {
+.box-modle .box:hover::before {
   height: 100%;
   width: 100%;
   background-color: #182126;
   border-top-right-radius: 0;
-  border-top-left-radius: 0 ;
+  border-top-left-radius: 0;
 }
 
-.box-modle .box:hover  .boxinfo h2  {color: #fff;}
+.box-modle .box:hover .boxinfo h2 {
+  color: #fff;
+}
 
 
- /*============== section contact ============*/
-    .form-perent {
-max-width: 640px;
-padding: 1.5em;
-margin: 150px auto;
-     background-color: #182126;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-       padding: 20px;
-       color: #FFF;
-       border-radius: 15px;
-
-       
-    }
-
-    .form-perent  h2{
-
-text-align: center;
-color: #FFF;
-       
-    }
+/*============== section contact ============*/
+.form-perent {
+  max-width: 640px;
+  padding: 1.5em;
+  margin: 150px auto;
+  background-color: #182126;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 20px;
+  color: #FFF;
+  border-radius: 15px;
 
 
+}
 
-    .form input {
-        padding: 12px 12px;
-        width: 100%;
-        outline: none;
-        border: none;
-        background-color: #182126;
-        border: 1px solid #eee;
-        color: #FFF;
-    }
+.form-perent h2 {
 
-    .form  div {
-    
-    }
+  text-align: center;
+  color: #FFF;
 
-    button {
-      padding: 10px 19px;
-      background-color: #038c7f;
-      color: #fff;
-      border: 0;
-outline: none; 
-font-size: 16px;
-border-radius: 12px;
-cursor: pointer;
-display: inline-block;
-width: 100%;
-    }
+}
+
+
+
+.form input {
+  padding: 12px 12px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #182126;
+  border: 1px solid #eee;
+  color: #FFF;
+}
+
+
+
+.send {
+  padding: 10px 19px;
+  background-color: #038c7f;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+}
 
 /*============== end ============*/
 
@@ -405,7 +426,7 @@ width: 100%;
 
 .elevideo video {
   width: 500px;
-    height: 400px;
+  height: 400px;
 }
 
 .flex-2 {
@@ -417,10 +438,10 @@ width: 100%;
   display: flex;
   align-items: center;
   color: #fff;
-height: 100vh;
+  height: 100vh;
   text-align: center;
   justify-content: center;
-  
+
 }
 
 .box-modle {
@@ -443,7 +464,7 @@ height: 100vh;
   --webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
- box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #ffff;
 }
 
 .box a {
@@ -534,10 +555,10 @@ height: 100vh;
 
 @media (max-width: 992px) {
   .inner .flex_section img {
-   width: 100%;
-   height: auto;
+    width: 100%;
+    height: auto;
   }
-  
+
 }
 
 
@@ -585,12 +606,12 @@ height: 100vh;
     width: 100%;
   }
 
-  .header-menu .container .logo{
+  .header-menu .container .logo {
     display: flex;
-   justify-content: center;
- 
+    justify-content: center;
+
   }
-  
+
 
 
   .icon {
@@ -655,7 +676,7 @@ textarea {
   text-align: center;
 }
 
-.Services  .info-Services span {
+.Services .info-Services span {
   font-size: 1.3em;
   line-height: 4.2;
   color: #038c7f
@@ -666,7 +687,7 @@ textarea {
   line-height: 1.5em;
   color: #787878;
   margin-bottom: 30px;
-  
+
 }
 
 
@@ -678,11 +699,11 @@ textarea {
 }
 
 .Services .box {
-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: #FFF;
   padding: 20px;
   border-radius: 20px;
-  
+
 }
 
 .Services .box h2 {
@@ -699,27 +720,39 @@ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 100%;
   height: 200px;
   border-top-right-radius: 20px;
-   border-top-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
-.box-Services .box  {
+.box-Services .box {
 
- padding: 0;
+  padding: 0;
+  
 
 }
 
-.box-Services .box  .link {
+.box-Services .box .link {
 
-padding: 0;
-text-decoration: none;
-color: #0d0d0d;
- 
- }
+  padding: 0;
+  text-decoration: none;
+  color: #0d0d0d;
+
+}
 
 .box-Services .box .modle-info {
   text-align: center;
   background-color: #f9f9f9;
 }
+.box-Services .box:nth-child(1),
+.box-Services .box:nth-child(2),
+.box-Services .box:nth-child(3),
+.box-Services .box:nth-child(4),
+.box-Services .box:nth-child(5)
+{
+  display: inline-block;
+}
+
+
+
 
 /*end section Services*/
 
@@ -730,11 +763,12 @@ color: #0d0d0d;
 }
 
 
-.Approche .flex_approche .imgApproche img{
-width: 50%;
+.Approche .flex_approche .imgApproche img {
+  width: 50%;
 
-} 
-.imgApproche  {
+}
+
+.imgApproche {
   display: contents;
 }
 
@@ -762,12 +796,12 @@ width: 50%;
 }
 
 .Approche-info .modle-Approche .modle .iconApproche {
-   font-size: 30px;
-   margin-right: 10px;
-   
+  font-size: 30px;
+  margin-right: 10px;
+
 }
 
-.Approche-info  span {
+.Approche-info span {
   line-height: 3.5;
   color: #038c7f;
   font-style: italic;
@@ -779,7 +813,7 @@ width: 50%;
 
 .modle .content h2 {
   color: #182126;
-  margin:  0 0 10px;
+  margin: 0 0 10px;
 }
 
 .modle-info p {
@@ -789,12 +823,15 @@ width: 50%;
 
 
 
-.RÉFÉRENCES { margin-top: 120px;  }
-.RÉFÉRENCES .box_RÉFÉRENCES{
+.RÉFÉRENCES {
+  margin-top: 120px;
+}
+
+.RÉFÉRENCES .box_RÉFÉRENCES {
   display: flex;
   justify-content: center;
 
-  
+
 }
 
 
@@ -825,23 +862,27 @@ width: 50%;
 
 
 
-.RÉFÉRENCES .box_RÉFÉRENCES {animation: 25s slide infinite linear;display: flex;align-items: center;}
+.RÉFÉRENCES .box_RÉFÉRENCES {
+  animation: 25s slide infinite linear;
+  display: flex;
+  align-items: center;
+}
 
 
 
-.RÉFÉRENCES .box_RÉFÉRENCES .box{
+.RÉFÉRENCES .box_RÉFÉRENCES .box {
   padding: 0 20px;
 
-  
+
 }
 
 @keyframes slide {
   0% {
-    transform:  translateX(0);
+    transform: translateX(0);
   }
 
   100% {
-    transform:  translateX(calc(-100%));
+    transform: translateX(calc(-100%));
   }
 }
 
@@ -850,18 +891,18 @@ width: 50%;
 
 /*end section Approche*/
 
-.Réalisation   {
+.Réalisation {
   padding-top: 120px;
 
 }
 
 
 
-.Réalisation .container .perentbox{
- display: grid;
-grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-gap: 10px;
-text-align: center;
+.Réalisation .container .perentbox {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  text-align: center;
 }
 
 .Réalisation .boxRéalisation {
@@ -873,38 +914,55 @@ text-align: center;
 
 
 
-.Réalisation .container .perentbox img{
- width: 100%;
+.Réalisation .container .perentbox img {
+  width: 100%;
 }
 
 
 .substyle {
   padding-top: 120px;
-  width: 100% ;
+  width: 100%;
 }
+
 .image {
   display: flex;
   justify-content: center;
 }
 
-.substyle  img {
+.substyle img {
   min-width: 50%;
   height: auto;
- 
+
 }
 
+
+.btnContactez {
+  background-color: #038c7f;
+  color: #FFF;
+  border-radius: 13px;
+  padding: 19px;
+
+
+}
+
+
+.btnContactez a {
+  text-decoration: none;
+  color: #FFF;
+}
 
 @media only screen and (max-width: 768px) {
-.Approche .flex_approche .imgApproche img {
+  .Approche .flex_approche .imgApproche img {
     width: 100%;
-}
+  }
+
   img {
     width: 100%;
   }
 }
 
 
-p{
+p {
   width: 100%;
   line-height: 1.6;
   padding: 10px;
@@ -924,12 +982,13 @@ strong {
   .Approche-info .title {
     text-align: center;
   }
-  .flex_approche{
+
+  .flex_approche {
     display: flex;
     flex-direction: column;
 
-   }
-  
+  }
+
 }
 
 
@@ -940,6 +999,7 @@ strong {
   width: 100%;
   background: #182126;
 }
+
 .footer .footer-row {
   display: flex;
   flex-wrap: wrap;
@@ -947,18 +1007,22 @@ strong {
   gap: 3.5rem;
   padding: 60px;
 }
+
 .footer-row .footer-col h4 {
   color: #fff;
   font-size: 1.2rem;
   font-weight: 400;
 }
+
 .footer-col .links {
   margin-top: 20px;
 }
+
 .footer-col .links li {
   list-style: none;
   margin-bottom: 10px;
 }
+
 .footer-col .links li a {
   text-decoration: none;
   color: #bfbfbf;
@@ -967,14 +1031,17 @@ strong {
 .footer-col li {
   color: #FFF;
 }
+
 .footer-col .links li a:hover {
   color: #fff;
 }
+
 .footer-col p {
   margin: 20px 0;
   color: #bfbfbf;
   max-width: 300px;
 }
+
 .footer-col form {
   display: flex;
   gap: 5px;
@@ -989,10 +1056,12 @@ strong {
   gap: 30px;
   cursor: pointer;
 }
+
 .footer-col .icons i {
   color: #afb6c7;
 }
-.footer-col .icons i:hover  {
+
+.footer-col .icons i:hover {
   color: #038c7f;
 }
 
@@ -1022,4 +1091,58 @@ strong {
   .footer-col form button {
     margin: 10px 0 0 0;
   }
+}
+ 
+
+
+.icons  {
+  color: #fff;
+}
+
+.icons [data-lucide="instagram"]:hover {
+  color: #C13584;
+  transition: 0.5s ease-in;
+}
+
+.icons [data-lucide="facebook"]:hover {
+  color: #405DE6;
+  transition: 0.5s ease-in;
+}
+
+.clicktop {
+  background-color: #038c7f;
+  color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right:-100px;
+  padding: 20px;
+  display: block;
+  display: flex;
+  border: 1px solid #FFF;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s ease-in-out;
+  z-index: 999;
+
+}
+.clicktop:hover {
+  background-color: #2fa096;
+}
+
+.clicktop.top{
+
+  right: 7px;
+}
+
+.more {
+
+  margin: 20px 0;
+  padding: 5px 30px;
+  border: 1px solid #b7b7b7;
+  outline: none;
+  cursor: pointer;
+
 }

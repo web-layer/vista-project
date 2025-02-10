@@ -44,12 +44,41 @@ ScrollReveal().reveal('.info');
 ScrollReveal().reveal('.Services');
 
 
+let clicktopscroll = document.querySelector(".clicktop")
+
+window.addEventListener("scroll", function () {
+   if(this.scrollY > 1500) {
+       clicktopscroll.classList.add("top")
+     }else {
+      clicktopscroll.classList.remove("top")
+     }
+})
+
+
+clicktopscroll.addEventListener('click', function () {
+  window.scroll({
+    top: 0,
+    behavior: "smooth"
+  })
+})
 
 
 
 
+/* let leadmore = document.querySelector('.more')
+let item = 8
+leadmore.onclick = function () {
+  let allbox = [...document.querySelectorAll(".container .box")] 
 
+   console.log(allbox)
 
+    for(let i = item; i < item + 8; i++ ) {
+      allbox[i].style.display = "inline-block"
+    }
+    item += 8
+}
+
+ */
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxmD7EVD67VXAxMpAUn9zrLL7SbWzaDtgyTzoqInooLzRW7pvPxj5ZxdQderi9PH4-40Q/exec'
 const form = document.forms['Contact-us']
