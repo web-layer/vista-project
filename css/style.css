@@ -1168,6 +1168,11 @@ strong {
   width: 50px;
 }
 
+.icons a {
+  text-decoration: none;
+  color: #fff;
+}
+
 body::-webkit-scrollbar {
   width: 10px;
 }

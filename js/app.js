@@ -1,13 +1,4 @@
 
-
-
-
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
 
     let iconmenu = document.querySelector(".iconmenu")
@@ -101,20 +92,4 @@ form.addEventListener('submit', e => {
 
 
 
-
-// Disable right-click
-/* 
-if (document.addEventListener) {
-    document.addEventListener('contextmenu', function(e) {
-      alert("This function has been disabled to prevent you from stealing my code!");
-      e.preventDefault();
-    }, false);
-  } else {
-    document.attachEvent('oncontextmenu', function() {
-      alert("This function has been disabled to prevent you from stealing my code!");
-      window.event.returnValue = false;
-    });
-  } */
-
-/* href="https://api.whatsapp.com/send?phone=212 661-522768&text=Send سي عبد رحيم " target="_blank" */
 
