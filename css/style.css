@@ -36,6 +36,7 @@
     linear-gradient(#038c7f 50px, transparent 0);
   background-position: 0px center, 15px center, 30px center, 45px center, 60px center, 75px center, 90px center;
   animation: loaderpage 0.65s linear infinite alternate;
+   
 }
 
 
@@ -726,7 +727,7 @@ textarea {
 .box-Services .box {
 
   padding: 0;
-  
+  display: none;
 
 }
 
@@ -1185,3 +1186,4 @@ body::-webkit-scrollbar-thumb {
   background-color: #038c7f;
 
 }
+
