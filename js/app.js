@@ -76,7 +76,7 @@ window.addEventListener("scroll", function () {
 
 
 
-/* let item = 9
+ let item = 9
 leadmore.onclick = function () {
   let allbox = [...document.querySelectorAll(".container .box")]
 
@@ -92,8 +92,8 @@ leadmore.onclick = function () {
   }
 }
 
- */
 
+ 
 
 
 
