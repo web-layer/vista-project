@@ -36,7 +36,7 @@
     linear-gradient(#038c7f 50px, transparent 0);
   background-position: 0px center, 15px center, 30px center, 45px center, 60px center, 75px center, 90px center;
   animation: loaderpage 0.65s linear infinite alternate;
-   
+
 }
 
 
@@ -744,12 +744,12 @@ textarea {
   background-color: #f9f9f9;
   padding: 16px;
 }
+
 .box-Services .box:nth-child(1),
 .box-Services .box:nth-child(2),
 .box-Services .box:nth-child(3),
 .box-Services .box:nth-child(4),
-.box-Services .box:nth-child(5)
-{
+.box-Services .box:nth-child(5) {
   display: inline-block;
 }
 
@@ -1094,10 +1094,10 @@ strong {
     margin: 10px 0 0 0;
   }
 }
- 
 
 
-.icons  {
+
+.icons {
   color: #fff;
 }
 
@@ -1117,7 +1117,7 @@ strong {
   border-radius: 50%;
   position: fixed;
   bottom: 20px;
-  right:-100px;
+  right: -100px;
   padding: 20px;
   display: block;
   display: flex;
@@ -1130,11 +1130,12 @@ strong {
   z-index: 999;
 
 }
+
 .clicktop:hover {
   background-color: #2fa096;
 }
 
-.clicktop.top{
+.clicktop.top {
 
   right: 7px;
 }
@@ -1162,7 +1163,7 @@ strong {
   font-size: 20px;
   transition: 0.5s ease-in-out;
   z-index: 999;
-  
+
 }
 
 .whatsapp img {
@@ -1177,11 +1178,11 @@ strong {
 body::-webkit-scrollbar {
   width: 10px;
 }
- 
+
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
+
 body::-webkit-scrollbar-thumb {
   background-color: #038c7f;
 
@@ -1192,7 +1193,8 @@ body::-webkit-scrollbar-thumb {
   background-color: #038c7f;
   margin: 20px;
   padding: 20px;
-  
+
+
 }
 
 
@@ -1203,27 +1205,27 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   background-color: #dbdbdb;
 
-  
+
 }
 
-.location_phone a { 
-display: inline-block ;
-text-align:justify;
+.location_phone a {
+  display: inline-block;
+  text-align: justify;
 }
 
-.location_phone{ 
+.location_phone {
   display: flex;
   padding: 20px;
 
 }
 
 
-.contact_flex .location_phone li  {
+.contact_flex .location_phone span {
   text-decoration: none;
   list-style: none;
-padding: 10px 0 0 0;
-width: 200px;
-text-align: center;
+  padding: 10px 0 0 0;
+  text-align: center;
+  display: ruby;
 
 }
 
@@ -1232,13 +1234,13 @@ text-align: center;
   color: #038c7f;
 }
 
-.contact_flex .location_phone li  a {
-color: #0d0d0d;
- text-decoration: none;
- text-align: center;
+.contact_flex .location_phone span a {
+  color: #0d0d0d;
+  text-decoration: none;
+  text-align: center;
 }
 
-.contact_flex   h2 {
+.contact_flex h2 {
   color: #038c7f;
 }
 
@@ -1247,28 +1249,38 @@ color: #0d0d0d;
   justify-content: center;
 }
 
-.contact_flex .location_phone li  {
-  padding: 16px 0 0;
+.contact_flex .location_phone span {
+  padding: 20px;
   background-color: #eee;
   margin: 10px;
 }
 
 @media (max-width: 992px) {
-  .contact_flex  {
-     flex-direction: column;
-     padding-bottom: 120px;
+  .contact_flex {
+    flex-direction: column;
+    padding-bottom: 120px;
   }
-  .location_phone{ 
+
+  .location_phone {
     display: flex;
     flex-direction: column;
     padding: 20px;
     justify-content: center;
-  
+
   }
 
 
   .pererntcontact {
     display: flex;
     justify-content: center;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .contact_flex .location_phone span {
+    display: flex;
+    width: 100%;
   }
 }
