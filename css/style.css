@@ -1226,7 +1226,8 @@ body::-webkit-scrollbar-thumb {
   padding: 10px 0 0 0;
   text-align: center;
   display: ruby;
-
+  
+width: 50%;
 }
 
 

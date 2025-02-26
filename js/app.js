@@ -7,6 +7,10 @@
   let iconmenu = document.querySelector(".iconmenu")
   let listmenu = document.querySelector(".menu")
 
+let btncontact =  document.querySelector(".contactscroll")
+
+
+
   
   iconmenu.addEventListener("click", function (e) {
 
@@ -18,22 +22,24 @@
 
 
 
-document.addEventListener('DOMContentLoaded', function ( ) {
-  if(scrollServices) {
-    scrollServices.addEventListener('click', function () {
-      document.getElementById("Offrons")
-      window.scroll({
-        top: 0,
-        behavior: "smooth",
-    
-      })
+
+
+scrollServices.addEventListener('click', function () {
+      let btn = document.getElementById("Offrons")
+            btn.scrollIntoView({
+              top: 0,
+           behavior: "smooth"
+          
+            })
+
+            
+           
     })
     
-  }
-})
+  
 
 
-
+    
 
 
 
