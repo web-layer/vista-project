@@ -699,13 +699,18 @@ textarea {
 
 }
 
-.Services .box {
+.Services .box   {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: #FFF;
-  padding: 20px;
-  border-radius: 20px;
+ 
+
+
+
 
 }
+
+
+
 
 .Services .box h2 {
   padding-bottom: 20px;
@@ -720,13 +725,20 @@ textarea {
 .Services .box img {
   width: 100%;
   min-height: 200px;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+
 }
 
-.box-Services .box {
 
-  padding: 0;
+
+.box-Services .box{
+/* border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px; */
+}
+
+.box-Services .box  {
 
 
 }
