@@ -1,20 +1,20 @@
 
 
 
-  let leadmore = document.querySelector('#more')
-  let clicktopscroll = document.querySelector(".clicktop")
-  const scrollServices = document.querySelector(".btn")
-  let iconmenu = document.querySelector(".iconmenu")
-  let listmenu = document.querySelector(".menu")
+let leadmore = document.querySelector('#more')
+let clicktopscroll = document.querySelector(".clicktop")
+const scrollServices = document.querySelector(".btn")
+let iconmenu = document.querySelector(".iconmenu")
+let listmenu = document.querySelector(".menu")
 
-let btncontact =  document.querySelector(".contactscroll")
+let btncontact = document.querySelector(".contactscroll")
 
 
 
-  
-  iconmenu.addEventListener("click", function (e) {
 
-    listmenu.classList.toggle('active')
+iconmenu.addEventListener("click", function (e) {
+
+  listmenu.classList.toggle('active')
 
 })
 
@@ -25,21 +25,21 @@ let btncontact =  document.querySelector(".contactscroll")
 
 
 scrollServices.addEventListener('click', function () {
-      let btn = document.getElementById("Offrons")
-            btn.scrollIntoView({
-              top: 0,
-           behavior: "smooth"
-          
-            })
+  let btn = document.getElementById("Offrons")
+  btn.scrollIntoView({
+    top: 0,
+    behavior: "smooth"
 
-            
-           
-    })
-    
-  
+  })
 
 
-    
+
+})
+
+
+
+
+
 
 
 
@@ -53,7 +53,20 @@ ScrollReveal({
 })
 
 ScrollReveal().reveal('.info');
-ScrollReveal().reveal('.Services');
+ScrollReveal().reveal('.info-Services', { delay: 200 });
+ScrollReveal().reveal('.Services .box', {
+  delay: 300,
+  interval: 100,
+  distance: '40px',
+  origin: 'bottom',
+  duration: 1200
+});
+
+// Contact Page Animations
+ScrollReveal().reveal('.section-header-contact', { delay: 200, origin: 'left', distance: '50px', duration: 1000 });
+ScrollReveal().reveal('.info-card', { delay: 300, interval: 150, origin: 'bottom', distance: '30px', duration: 1000 });
+ScrollReveal().reveal('.map-container', { delay: 600, origin: 'bottom', distance: '30px', duration: 1000 });
+ScrollReveal().reveal('.glass-form', { delay: 400, origin: 'right', distance: '50px', duration: 1000 });
 
 
 
@@ -69,20 +82,20 @@ window.addEventListener("scroll", function () {
 
 
 
- clicktopscroll.addEventListener('click', function () {
+clicktopscroll.addEventListener('click', function () {
   window.scroll({
     top: 0,
     behavior: "smooth",
 
   })
 
-}) 
- 
+})
 
 
 
 
- let item = 9
+
+let item = 9
 leadmore.onclick = function () {
   let allbox = [...document.querySelectorAll(".container .box")]
 
@@ -99,7 +112,7 @@ leadmore.onclick = function () {
 }
 
 
- 
+
 
 
 
