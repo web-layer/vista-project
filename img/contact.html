@@ -10,8 +10,7 @@
     <meta name="description"
         content="Plongez dans notre univers où chaque image compte et chaque son résonne avec une puissance narrative. ">
 
-    <!-- ScrollReveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 
 <body>
@@ -43,17 +42,18 @@
 
 
 
-    <section class="contact-section">
+    <!-- New Contact Section Structure -->
+    <div class="contact-section">
         <div class="container">
             <div class="contact-grid">
-                <!-- Left Side: Information & Map -->
+
+                <!-- Left Side: Info & Map -->
                 <div class="contact-info-wrapper">
                     <div class="section-header-contact">
                         <span>Contactez-Nous</span>
-                        <h1>Prêt à Donner Vie à Vos Projets ?</h1>
-                        <p>Que vous ayez une vision claire simplement une idée en germe, nous sommes là pour
-                            transformer vos ambitions audiovisuelles en réalité. Contactez-nous dès aujourd'hui pour une
-                            consultation personnalisée.</p>
+                        <h1>Prêt à démarrer votre projet ?</h1>
+                        <p>Notre équipe est à votre écoute pour transformer vos idées en réalité visuelle. N'hésitez pas
+                            à nous contacter.</p>
                     </div>
 
                     <div class="info-cards">
@@ -82,7 +82,7 @@
                                 <i data-lucide="map-pin"></i>
                             </div>
                             <div class="card-content">
-                                <h3>Adresse</h3>
+                                <h3>Localisation</h3>
                                 <p>Al Hanaa 3 Imm 20 Magazin 2, Sidi Bernoussi, Casablanca</p>
                             </div>
                         </div>
@@ -99,11 +99,11 @@
                 <!-- Right Side: Contact Form -->
                 <div class="contact-form-wrapper">
                     <div class="glass-form">
-                        <h2>Envoyez-nous un Message</h2>
-                        <form class="form" name="Contact-us" id="contactForm">
+                        <h2>Envoyez-nous un message</h2>
+                        <form class="form" name="Contact-us">
                             <div class="form-group">
                                 <label for="name">Nom Complet</label>
-                                <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required>
                             </div>
 
                             <div class="form-group">
@@ -113,14 +113,13 @@
 
                             <div class="form-group">
                                 <label for="phone">Téléphone</label>
-                                <input type="tel" id="phone" name="phone number" placeholder="Votre numéro de téléphone"
-                                    required>
+                                <input type="number" id="phone" name="phone number" placeholder="Votre numéro" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5"
-                                    placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+                                <label for="message">Message (Optionnel)</label>
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="Comment pouvons-nous vous aider ?"></textarea>
                             </div>
 
                             <button class="submit-btn" type="submit">
@@ -130,9 +129,10 @@
                         </form>
                     </div>
                 </div>
+
             </div>
         </div>
-    </section>
+    </div>
 
 
     <section class="footer" id="contact">
